@@ -1,0 +1,55 @@
+
+ store proc call ("SP_name",com.deepak.result.Domain) Curser A,B,C
+ 
+ @Entity
+
+ 
+ Domain {
+ 
+ column (A)
+ private String a;
+ 
+ column (B)
+ private String b;
+ 
+ column (C)
+ private String c;
+ 
+ // settert getter
+ }
+ 
+ Model class Response 
+ 
+ com.deepak.model.Response {
+ 
+
+ private String abc;
+ 
+ private String b;
+
+ private String c;
+ 
+ private Integer d ;
+ 
+ // settert getter
+ 
+ 
+ }
+ 
+ Spring boot auto configuration 
+ 
+ 
+ List<com.deepak.model.Response> results = new ArrayList<com.deepak.model.Response>();
+
+ results =  sp.getResultSet() ; // no exception , i think classcostexception should be thrown 
+                                           // resulSet com.deepak.result.Domain
+										   
+										   SSL - one way - server only validate client 
+										      ,  two way - server and client both validate 
+										   
+										   Oauth 2.0  
+										   
+										   
+Rest API Security - 
+
+Oauth - theory and practical - with diagram - Timeframe 23/08/2020 

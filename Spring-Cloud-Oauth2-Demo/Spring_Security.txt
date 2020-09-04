@@ -1,0 +1,80 @@
+Form Based Authentication
+Basic Authentication
+Whitelist Resources with Basic AUthentication
+Manual User creation
+
+username
+password must be encoded 
+Role/s (Role name)
+Authorities ?
+and more ...
+
+
+Role and Permission
+
+
+Admin User 
+
+ROLES and Permissions using enums 
+
+Assign permission to Roles 
+
+Role based Authentication 
+
+Permission Based Authentication 
+
+Management API 
+
+hasAuthority 
+
+
+AddingAuthority To user 
+
+
+Permission and Authority in GrantedAuthority
+
+Order does matter 
+
+
+
+
+
+curl https://{subdomain}.zendesk.com/api/v2/users/me.json \ -v -u {email_address}:{password}
+
+private key - can not share 
+
+public key - share public certifcate
+
+CSR 
+
+ CA - CSR  (public certificate / private certificate)
+
+
+Self signed certifcate 
+
+CA certifcate authurity - Digicert Certificate authority 
+
+
+One way ssl - Server share public certificate with client 
+
+2 way ssl (mutual ssl)- client and server bot share their public certiifcate 
+
+
+ 
+key store - private key
+trust store - add trusted site certificate 
+
+
+:443 ssl certifcate 
+
+
+A - digicert CA public certificate server - 443 Certicate 
+
+   Authentication (username/password) / Authorization  (AP1,AP2) (Coarse gain (Role based) and figrned grant)
+
+
+Site - Git hub 
+
+1db6e9978edce04d26f13f4491e5e239c33a8fe6
+
+curl -H "Authorization: token 1db6e9978edce04d26f13f4491e5e239c33a8fe6" https://api.github.com/user
